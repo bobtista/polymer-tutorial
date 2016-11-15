@@ -13,7 +13,14 @@
     </style>
 
     <h1>New view</h1>
-    <paper-slider min="-100" max="100" value="50"></paper-slider>
+    <style is="custom-style">
+    paper-slider.red {
+      --paper-slider-knob-color: var(--paper-red-500);
+      --paper-slider-active-color: var(--paper-red-500);
+    }
+    </style>
+
+    <paper-slider class="red" min="-100" max="100" value="50"></paper-slider>
   </template>
   <!-- Creates the element's prototype and registers it -->
   <script>
